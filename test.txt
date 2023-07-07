@@ -1,0 +1,37 @@
+$effectSql = "SELECT * FROM center JOIN effects ON center.c_rcs_No = effects.e_rcsNo";
+                        $effstmt = $conn->prepare($effectSql);
+                        $effstmt->execute();
+                        $effresult = $effstmt->get_result();
+
+
+ while ($effrow = $effresult->fetch_assoc()) {
+
+                                echo "<div>";
+                                echo "<div>";
+                                echo "<strong>ผลกระทบข้อกำหนดลูกค้า</strong>";
+                                echo "<p>" . $effrow["e_1"] . "</p>";
+                                echo "<strong>ผลกระทบต่อแผนผลิตของลูกค้า</strong>";
+                                echo "<p>" . $effrow["e_2"] . "</p>";
+                                echo "<strong>ผลกระทบต้อการใช้งานชิ้นส่วน</strong>";
+                                echo "<p>" . $effrow["e_3"] . "</p>";
+                                echo "<strong>ผลกระทบต่อรูปร่างเเละขนาดทั่วไปของชิ้นส่วน</strong>";
+                                echo "<p>" . $effrow["e_4"] . "</p>";
+                                echo "<strong>ผลกระทบต่อรูปร่างเเละขนาดทั่วไปของชิ้นส่วน</strong>";
+                                echo "<p>" . $effrow["e_5"] . "</p>";
+                                echo "</div>";
+
+                                echo "<div>";
+                                echo "<strong>ผลกระทบต่อผู้ปฎิบัติงานในขั้นตอนไป</strong>";
+                                echo "<p>" . $effrow["e_6"] . "</p>";
+                                echo "<strong>ผลกระทบต่อเครื่องมือเเละอุปกรณ์ในการผลิต</strong>";
+                                echo "<p>" . $effrow["e_7"] . "</p>";
+                                echo "<strong>ผลกระทบต่อมาตรฐานในการปฎิบัติงาน</strong>";
+                                echo "<p>" . $effrow["e_8"] . "</p>";
+                                echo "<strong>ผลกระทบต่อต้นทุนการผลิต</strong>";
+                                echo "<p>" . $effrow["e_9"] . "</p>";
+                                echo "</div>";
+                                echo "</div>";
+                                echo "<strong>สามารถดำเนินการได้หรือไม่ </strong>";
+                                echo "<p>" . $effrow["e_allow"] . "</p>";
+                            }
+                        } 

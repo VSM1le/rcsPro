@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Spartan', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgb(233, 237, 238);
+    height: 100vh;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+}
+
+/* login */
+#login {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#login h2 {
+    text-align: center;
+    /* margin-bottom: 40px; */
+}
+
+#login input {
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+
+}
+
+#login label {
+    color: #888;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+#login button {
+    float: right;
+    background: #555;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+}
+
+#login button:hover {
+    opacity: .3;
+}
+
+#login .error {
+    background: #eec4c4;
+    color: #a94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto
+}
+
+
+
+.extra-info {
+    display: none;
+}
+
+.expandable-row:hover+.extra-info {
+    display: table-row;
+}
+
+/* .card-body {
+    display: flex;
+} */
+
+.checkk {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 120px;
+}
+
+.a1 {
+    overflow-x: auto !important;
+    text-align: center !important;
+    justify-content: center !important;
+    margin: 10px 200px !important;
+}
+
+.eff1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 8rem;
+}
+
+.eff1 .eff2 .eff3 {
+    display: flex;
+}
+
+.ob1 {
+    display: flex;
+}
+
+.ob1 p {
+    margin-left: 5px;
+}
+
+.ob2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 250px;
+    word-wrap: break-word;
+
+}
+
+.ob3 {
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#rcs {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid red;
+    /* width: 80%; */
+    margin: 0 350px;
+    background-color: rgb(236, 209, 173);
+}
+
+#rcs .rcs-head {
+    display: flex;
+    border: 1px solid red;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 30px;
+}
+
+#rcs .to {
+    display: flex;
+    margin: 10px 20px;
+    border: 1px solid black;
+}
+
+#rcs .to h4 {
+    margin-right: 10px;
+}
+
+#rcs .part-metal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 200px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#rcs .objective {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 200px;
+
+
+}
+
+#rcs .objective .check-box div {
+    display: flex;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+#rcs .objective .check-box div input {
+    margin-right: 5px;
+}
+
+#rcs .status-change {
+    border: 1px solid pink;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+#rcs .status-change div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+
+#rcs .status-change h6 {
+    flex: 0 0 200px;
+    /* Adjust the width as needed */
+}
+
+#rcs .status-change textarea {
+    width: 350px;
+    /* Adjust the width as needed */
+    height: 200px;
+    /* Adjust the height as needed */
+}
